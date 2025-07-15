@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  /* scrollbar-width: none; */
+  -ms-overflow-style: none; /*removing scroll bar for edge*/
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#coverPic {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+#profilePicSection {
+  display: flex;
+  justify-content: center;
+}
+
+#profileFrame {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 8px black solid;
+}
+
+#profilePic {
+  width: 40vw;
+  height: 40vw;
+  object-fit: cover;
+  object-position: 50% 5%;
+  position: absolute;
+  top: -11vw;
+  left: -12vw;
+}
