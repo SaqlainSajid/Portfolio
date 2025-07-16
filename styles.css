@@ -13,18 +13,31 @@ header {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.cover {
+  width: 100vw;
+  height: 100vh;
 }
 
 #coverPic {
+  opacity: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   object-position: 50% 70%;
+  transition: opacity 2s ease-in-out;
+}
+
+#coverPic.show {
+  opacity: 1;
 }
 
 #profilePicSection {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 30vw;
+  left: 42vw;
 }
 
 #profileFrame {
@@ -33,7 +46,6 @@ header {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: 8px black solid;
 }
 
 #profilePic {
